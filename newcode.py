@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore")
 st.title('Bank Card Fraud Detection')
 
 # Read Data into a Dataframe
-df = pd.read_csv(r"C:\Users\lathif\Downloads\archive (15)\creditcard.csv")
+df = pd.read_csv(r"https://github.com/RaimbekovA/bank-card-fraud-detection-using-machine-learning/blob/main/CCFD%20v.2/creditcard.csv")
 
 # --- 1 CHECKBOX ---
 # Print description of the initial data and shape
