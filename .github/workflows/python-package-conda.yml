@@ -25,7 +25,10 @@ jobs:
       run: |
         conda install -y flake8 pytest pandas
         pip install scikit-learn matplotlib seaborn streamlit
-        # Add any other necessary libraries here
+    
+    - name: Download dataset from another repository
+      run: |
+        curl -L -o creditcard.csv "https://raw.githubusercontent.com/RaimbekovA/bank-card-fraud-detection-using-machine-learning/main/CCFD%20v.2/creditcard.csv"
     
     - name: Run Python script
       run: |
