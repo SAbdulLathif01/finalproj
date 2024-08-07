@@ -23,8 +23,9 @@ jobs:
     
     - name: Install dependencies
       run: |
-        conda install -y flake8 pytest
-        # Add other conda or pip install commands as necessary
+        conda install -y flake8 pytest pandas
+        pip install scikit-learn matplotlib seaborn
+        # Add any other necessary libraries here
     
     - name: Run Python script
       run: |
